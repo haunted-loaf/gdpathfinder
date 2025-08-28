@@ -25,9 +25,9 @@ Returns the index of the nearest point in the point field, or -1 if no such poin
 
 ### Find path
 
-`kdnav.path(start_idx: int, end_idx: int) -> KDNavJob`
+`kdnav.path(start_idx: int, end_idx: int, maxdist: float) -> KDNavJob`
 
-Returns a KDNavJob.
+Returns a KDNavJob which will find a path from the point at `start_idx` to the point at `end_idx`, using edges between points that are at most `maxdist` apart.
 
 ### Wait for the job
 
