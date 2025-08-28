@@ -1,0 +1,19 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+godot = { version = "0.3.5", features = [
+  "api-custom",
+  "double-precision",
+  "experimental-threads",
+] }
+kiddo = "5.2.2"
+ordered-float = "5.0.0"
+priority-queue = "2.5.0"
+priq = "0.2.0"
+threadpool = "1.8.1"
